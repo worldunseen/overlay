@@ -11,10 +11,11 @@ inherit desktop distutils-r1 git-r3 xdg-utils
 DESCRIPTION="A free, open source stenography engine"
 HOMEPAGE="https://www.openstenoproject.org/plover/"
 EGIT_REPO_URI="https://github.com/openstenoproject/plover.git"
+EGIT_COMMIT="d20167f4da549376af7d978dec5c17b1c4f94d89"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 
 RDEPEND="
 	dev-python/appdirs[${PYTHON_USEDEP}]
