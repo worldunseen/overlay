@@ -1,10 +1,10 @@
 # worldunseen overlay
-My personal Gentoo repo of packages that I want but aren't on the main repo. 
+My personal gentoo repo of packages that I want but aren't on the main repo. 
 I can't guarantee anything, but the ebuilds that I mark stable are done with some conviction.
 
 ## Installation
 
-Add this to your ```repos.conf``` folder/file:
+Add this to your ```/etc/portage/repos.conf``` folder/file:
 
 ```
 [worldunseen]
