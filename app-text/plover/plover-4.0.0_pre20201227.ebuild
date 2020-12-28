@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{6..8} )
+PYTHON_COMPAT=( python3_{6..9} )
 DISTUTILS_USE_SETUPTOOLS=rdepend
 
 inherit desktop distutils-r1 git-r3 xdg-utils
@@ -19,17 +19,14 @@ KEYWORDS="amd64 x86"
 
 RDEPEND="
 	dev-python/appdirs[${PYTHON_USEDEP}]
+	dev-python/Babel[${PYTHON_USEDEP}]
+	dev-python/cython[${PYTHON_USEDEP}]
 	dev-python/dbus-python[${PYTHON_USEDEP}]
 	dev-python/PyQt5[${PYTHON_USEDEP}]
 	dev-python/pyserial[${PYTHON_USEDEP}]
 	dev-python/python-xlib[${PYTHON_USEDEP}]
-	dev-python/wcwidth[${PYTHON_USEDEP}]
-"
-
-BDEPEND="
-	dev-python/cython[${PYTHON_USEDEP}]
-	dev-python/Babel[${PYTHON_USEDEP}]
 	dev-python/setuptools_scm[${PYTHON_USEDEP}]
+	dev-python/wcwidth[${PYTHON_USEDEP}]
 "
 
 distutils_enable_tests pytest
